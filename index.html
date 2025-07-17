@@ -6,63 +6,23 @@
         <title>Document</title>
     </head>
     <body> 
-        <table border="black">
-            <caption>Food Menu</caption>
-            <thead>
-                <tr>
-                    <th rowspan="2">Item</th>
-                    <th colspan="2">Price</th>
-                </tr>
-                <tr>
-                    <th>INR</th>
-                    <th>USd</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Frooti</td>
-                    <td>10</td>
-                    <td>0.14</td>
-                </tr>
-                <tr>
-                    <td>Samosa</td>
-                    <td>12</td>
-                    <td>0.17</td>
-                </tr>
-                <tr>
-                    <td>Chips</td>
-                    <td>20</td>
-                    <td>0.28</td>
-                </tr>
-            </tbody>
-        </table>
-        <table border="black">
-            <caption>A test table with merged cells</caption>
-            <thead>
-                <tr>
-                    <th rowspan="2"></th>
-                    <th colspan="2">Average</th>
-                    <th rowspan="2">Red Eyes</th>
-                </tr>
-                <tr>
-                    <th>Height</th>
-                    <th>Weight</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Males</td>
-                    <td>1.9</td>
-                    <td>0.003</td>
-                    <td>40%</td>
-                </tr>
-                <tr>
-                    <td>Females</td>
-                    <td>1.7</td>
-                    <td>0.002</td>
-                    <td>43%</td>
-                </tr>
-            </tbody>
-        </table>
+        <h1>Registration Form</h1>
+        <form action="/server">
+            <input type="text" placeholder="First Name" name="Fn">
+            <input type="text" placeholder="Last Name" name="Ln">
+            <br>
+            <label for="gender">Please select gender</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <label for="terms">Do you agree to all our terms of services?</label>
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">Yes, I agree</label>
+            <br>
+            <button type="submit">Register</button>
+        </form>
     </body>
 </html>
